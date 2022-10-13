@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include gameplan_saas *.css
+recursive-include gameplan_saas *.csv
+recursive-include gameplan_saas *.html
+recursive-include gameplan_saas *.ico
+recursive-include gameplan_saas *.js
+recursive-include gameplan_saas *.json
+recursive-include gameplan_saas *.md
+recursive-include gameplan_saas *.png
+recursive-include gameplan_saas *.py
+recursive-include gameplan_saas *.svg
+recursive-include gameplan_saas *.txt
+recursive-exclude gameplan_saas *.pyc
