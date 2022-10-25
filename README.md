@@ -1,6 +1,6 @@
-## Gameplan Saas
+## Gameplan Website
 
-Marketing pages and SAAS flow
+Marketing pages and SAAS flow for Gameplan
 
 #### License
 

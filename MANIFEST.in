@@ -4,15 +4,15 @@ include *.json
 include *.md
 include *.py
 include *.txt
-recursive-include gameplan_saas *.css
-recursive-include gameplan_saas *.csv
-recursive-include gameplan_saas *.html
-recursive-include gameplan_saas *.ico
-recursive-include gameplan_saas *.js
-recursive-include gameplan_saas *.json
-recursive-include gameplan_saas *.md
-recursive-include gameplan_saas *.png
-recursive-include gameplan_saas *.py
-recursive-include gameplan_saas *.svg
-recursive-include gameplan_saas *.txt
-recursive-exclude gameplan_saas *.pyc
+recursive-include gameplan_website *.css
+recursive-include gameplan_website *.csv
+recursive-include gameplan_website *.html
+recursive-include gameplan_website *.ico
+recursive-include gameplan_website *.js
+recursive-include gameplan_website *.json
+recursive-include gameplan_website *.md
+recursive-include gameplan_website *.png
+recursive-include gameplan_website *.py
+recursive-include gameplan_website *.svg
+recursive-include gameplan_website *.txt
+recursive-exclude gameplan_website *.pyc

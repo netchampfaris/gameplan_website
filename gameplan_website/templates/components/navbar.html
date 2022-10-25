@@ -1,0 +1,27 @@
+<header class="py-6">
+    <div class="container">
+        <div class="flex items-center justify-between">
+            <a class="block" href="/">
+                <div class="flex gap-2 items-center">
+                    <!-- <img src="/assets/gameplan_website/img/logo.svg" alt="Gameplan Logo"> -->
+                    {{ x.logo(class='w-5') }}
+                    <img src="/assets/gameplan_website/img/logotype.svg" alt="Gameplan Logo">
+                </div>
+            </a>
+            <nav>
+                <ul class="flex gap-4">
+                    <li>
+                        {{ x.link(url='/about-us', label='About Us') }}
+                    </li>
+                    <li>
+                        {{ x.link(url='/blog', label='Blogs') }}
+                    </li>
+                    <li>
+                        {{ x.link(url='/blog', label='Frappeverse 🪐') }}
+                    </li>
+                </ul>
+            </nav>
+            {{ x.primary_button(url='/signup', label='Get Started') }}
+        </div>
+    </div>
+</header>

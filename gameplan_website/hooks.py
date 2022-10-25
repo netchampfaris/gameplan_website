@@ -1,7 +1,7 @@
 from . import __version__ as app_version
 
-app_name = "gameplan_saas"
-app_title = "Gameplan Saas"
+app_name = "gameplan_website"
+app_title = "Gameplan Website"
 app_publisher = "Frappe Tech"
 app_description = "Marketing pages and SAAS flow"
 app_email = "developers@frappe.io"
@@ -11,15 +11,15 @@ app_license = "CC BY 4.0"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/gameplan_saas/css/gameplan_saas.css"
-# app_include_js = "/assets/gameplan_saas/js/gameplan_saas.js"
+# app_include_css = "/assets/gameplan_website/css/gameplan_website.css"
+# app_include_js = "/assets/gameplan_website/js/gameplan_website.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/gameplan_saas/css/gameplan_saas.css"
-# web_include_js = "/assets/gameplan_saas/js/gameplan_saas.js"
+# web_include_css = "/assets/gameplan_website/css/gameplan_website.css"
+# web_include_js = "/assets/gameplan_website/js/gameplan_website.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "gameplan_saas/public/scss/website"
+# website_theme_scss = "gameplan_website/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -55,28 +55,30 @@ app_license = "CC BY 4.0"
 # ----------
 
 # add methods and filters to jinja environment
-# jinja = {
-#	"methods": "gameplan_saas.utils.jinja_methods",
-#	"filters": "gameplan_saas.utils.jinja_filters"
-# }
+jinja = {
+	"methods": "gameplan_website.templates.jinja_methods",
+	# "filters": "gameplan_website.utils.jinja_filters"
+}
+
+update_website_context = "gameplan_website.website.website_context"
 
 # Installation
 # ------------
 
-# before_install = "gameplan_saas.install.before_install"
-# after_install = "gameplan_saas.install.after_install"
+# before_install = "gameplan_website.install.before_install"
+# after_install = "gameplan_website.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "gameplan_saas.uninstall.before_uninstall"
-# after_uninstall = "gameplan_saas.uninstall.after_uninstall"
+# before_uninstall = "gameplan_website.uninstall.before_uninstall"
+# after_uninstall = "gameplan_website.uninstall.after_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "gameplan_saas.notifications.get_notification_config"
+# notification_config = "gameplan_website.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -115,39 +117,39 @@ app_license = "CC BY 4.0"
 
 # scheduler_events = {
 #	"all": [
-#		"gameplan_saas.tasks.all"
+#		"gameplan_website.tasks.all"
 #	],
 #	"daily": [
-#		"gameplan_saas.tasks.daily"
+#		"gameplan_website.tasks.daily"
 #	],
 #	"hourly": [
-#		"gameplan_saas.tasks.hourly"
+#		"gameplan_website.tasks.hourly"
 #	],
 #	"weekly": [
-#		"gameplan_saas.tasks.weekly"
+#		"gameplan_website.tasks.weekly"
 #	],
 #	"monthly": [
-#		"gameplan_saas.tasks.monthly"
+#		"gameplan_website.tasks.monthly"
 #	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "gameplan_saas.install.before_tests"
+# before_tests = "gameplan_website.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "gameplan_saas.event.get_events"
+#	"frappe.desk.doctype.event.event.get_events": "gameplan_website.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-#	"Task": "gameplan_saas.task.get_dashboard_data"
+#	"Task": "gameplan_website.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -183,5 +185,5 @@ app_license = "CC BY 4.0"
 # --------------------------------
 
 # auth_hooks = [
-#	"gameplan_saas.auth.validate"
+#	"gameplan_website.auth.validate"
 # ]

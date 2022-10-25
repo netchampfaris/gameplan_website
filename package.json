@@ -1,0 +1,12 @@
+{
+  "name": "gameplan_website",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./gameplan_website/public/css/style.css -o ./gameplan_website/public/css/style.output.css --watch"
+  },
+  "devDependencies": {
+    "frappe-ui": "^0.0.80",
+    "tailwindcss": "^3.1.8"
+  }
+}

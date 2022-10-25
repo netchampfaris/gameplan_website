@@ -3,5 +3,5 @@
 *.egg-info
 *.swp
 tags
-gameplan_saas/docs/current
+gameplan_website/docs/current
 node_modules/

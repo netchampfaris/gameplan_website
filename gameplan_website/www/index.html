@@ -1,0 +1,163 @@
+---
+no_cache: 1
+---
+
+{% extends "templates/marketing.html" %}
+
+{% block body %}
+
+<main>
+    <section class="container">
+        <div class="relative flex items-start justify-between py-40 gap-x-16">
+            <div>
+                <h1 class="text-[64px] font-bold leading-[1.1] tracking-[-1%]">
+                    Open-source team collaboration platform for remote teams
+                </h1>
+                <p class="mt-6 font-medium text-[22px] text-gray-700 max-w-[38ch]">
+                    Meet <span class="font-bold">Gameplan</span>, an async communication tool for having meaningful
+                    discussions
+                </p>
+                <div class="mt-8">
+                    {{ x.primary_button(
+                    url='/signup',
+                    label='Get Started &mdash; <span class="font-normal">It\'s free</span>',
+                    size='large'
+                    ) }}
+                </div>
+            </div>
+            <div class="relative z-10 mr-[-1%]">
+                {{ x.hero() }}
+            </div>
+            <div class="absolute pointer-events-none top-0 right-0 -mr-[34%] -mt-[4%]">
+                {{ x.hero_gradient() }}
+            </div>
+        </div>
+    </section>
+    <section class="container mt-32">
+        <h2 class="text-[50px] font-bold max-w-[20ch] leading-tight">
+            Everything you need for <span class="text-gray-500">meaningful</span> discussions.
+        </h2>
+        <div class="grid grid-cols-2 mt-16 gap-10">
+            <div class="bg-gray-100 rounded-2xl p-16">
+                <h3 class="text-7xl text-gray-900 font-bold">
+                    Spotlight Search
+                </h3>
+                <p class="text-3xl mt-4 mb-14 text-gray-600">
+                    Effective spotlight search, gameplan will show you everything you need.
+                </p>
+                {{ x.spotlight_search() }}
+            </div>
+            <div class="bg-gray-100 rounded-2xl p-16">
+                <h3 class="text-7xl text-gray-900 font-bold">
+                    Spotlight Search
+                </h3>
+                <p class="text-3xl mt-4 mb-14 text-gray-600">
+                    Effective spotlight search, gameplan will show you everything you need.
+                </p>
+                {{ x.spotlight_search() }}
+            </div>
+            <div class="bg-gray-100 col-span-2 rounded-2xl p-16">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="text-7xl text-gray-900 font-bold">
+                            Discussions
+                        </h3>
+                        <p class="text-3xl mt-4 mb-14 text-gray-600 max-w-[30ch]">
+                            A common discussions feed that shows discussions from across — projects and teams.
+                        </p>
+                    </div>
+                    {{ x.previews.discussions() }}
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-2xl p-16">
+                <h3 class="text-7xl text-gray-900 font-bold">
+                    Notifications
+                </h3>
+                <p class="text-3xl mt-4 mb-14 text-gray-600 max-w-[20ch]">
+                    Eyecatchy Notifications which attracts users.
+                </p>
+                <div class="-mx-6">
+                    {{ x.previews.notifications() }}
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-2xl pt-16 px-16">
+                <h3 class="text-7xl text-gray-900 font-bold">
+                    Home for your team
+                </h3>
+                <p class="text-3xl mt-4 mb-14 text-gray-600">
+                    Find your team members and team projects, all at one place
+                </p>
+                <div class="-mx-6">
+                    {{ x.previews.team() }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-44">
+        <div class="flex justify-between">
+            <div>
+                {{ x.logo(class='w-16') }}
+                <h2 class="mt-8 text-[50px] font-bold max-w-[5ch] leading-none">Why Gameplan?</h2>
+            </div>
+            <div class="text-gray-700 text-7xl font-[450] max-w-[50ch]">
+                <p>
+                    Chat forces you to be online all the time and doesn't really have any concept of threaded
+                    discussions. Gameplan allows you to categorize your discussions around — projects and teams.
+                </p>
+                <p>
+                    You can surface important information and conclusions from your discussions into the readme's of
+                    your projects and teams.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="grid grid-cols-3 gap-5">
+            <div class="flex flex-col bg-gray-100 py-12 px-12 rounded-[18px] text-center">
+                <div class="h-[150px] mx-auto">
+                    {{ x.previews.people() }}
+                </div>
+                <div class="mt-auto">
+                    <h3 class="mt-9 text-4xl font-bold text-gray-900">People directory</h3>
+                    <p class="mt-3 text-gray-700 text-xl">Every team member has a profile page and a bio to know them
+                        better</p>
+                </div>
+            </div>
+            <div class="flex flex-col bg-gray-100 py-12 px-12 rounded-[18px] text-center">
+                <div class="h-[150px] mx-auto inline-block">
+                    {{ x.previews.quick_actions() }}
+                </div>
+                <div class="mt-auto">
+                    <h3 class="mt-9 text-4xl font-bold text-gray-900">Quick Actions</h3>
+                    <p class="mt-3 text-gray-700 text-xl">Create new project, join calls and much more using our smart
+                        shortcuts.</p>
+                </div>
+            </div>
+            <div class="flex flex-col bg-gray-100 py-12 px-12 rounded-[18px] text-center">
+                <div class="h-[150px] mx-auto inline-block">
+                    {{ x.previews.emojis() }}
+                </div>
+                <div class="mt-auto">
+                    <h3 class="mt-9 text-4xl font-bold text-gray-900">Use emoji’s</h3>
+                    <p class="mt-3 text-gray-700 text-xl">Customize your Team and Projects with emojis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5">
+        <div class="bg-gray-100 pt-16 text-center rounded-[18px]">
+            <h2 class="mb-10 max-w-[25ch] mx-auto font-bold text-[54px] text-gray-900">Let your team manage workspaces quick and easy.</h2>
+            {{ x.primary_button(
+            url='/signup',
+            label='Get Started &mdash; <span class="font-normal">It\'s free</span>',
+            size='large'
+            ) }}
+            <img src="/assets/gameplan_website/img/cta.png" class="mx-auto" alt="CTA">
+        </div>
+    </section>
+</main>
+
+
+
+
+{% endblock %}
